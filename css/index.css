@@ -94,7 +94,7 @@ section {
 .container {
   display: none;
   opacity: 0;
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   background-color: var(--color-primary);
 }
 

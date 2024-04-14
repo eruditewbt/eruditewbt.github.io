@@ -51,13 +51,13 @@
     const activeIndex = buttons.indexOf(activeButton);
 
     // If swiped left, click the next button
-    if (touchendX < touchstartX) {
+    if (touchendX + 100 < touchstartX) {
       const nextButton = buttons[activeIndex + 1];
       nextButton?.click();
     }
 
     // If swiped right, click the previous button
-    if (touchendX > touchstartX) {
+    if (touchendX > touchstartX + 100) {
       const prevButton = buttons[activeIndex - 1];
       prevButton?.click();
     }
@@ -115,12 +115,12 @@
 
       // slide in the next tab (left or right)
       if (direction === "right") {
-        if (nextActiveTab.style.animation !== "disappear 1s ease-in-out") {
-          nextActiveTab.style.animation = "disappear 1s ease-in-out";
+        if (nextActiveTab.style.animation !== "disappear 0.5s ease-in-out") {
+          nextActiveTab.style.animation = "disappear 0.5s ease-in-out";
         }
       } else {
-        if (nextActiveTab.style.animation !== "appear 1s ease-in-out") {
-          nextActiveTab.style.animation = "appear 1s ease-in-out";
+        if (nextActiveTab.style.animation !== "appear 0.5s ease-in-out") {
+          nextActiveTab.style.animation = "appear 0.5s ease-in-out";
         }
       }
 
@@ -156,6 +156,8 @@
         handleTabChange(prevActiveTab, nextActiveTab, "left");
       } else if (nextIndex < activeIndex) {
         handleTabChange(prevActiveTab, nextActiveTab, "right");
+      } else if (nextIndex === activeIndex) {
+        return;
       }
 
       // Update the active button class
