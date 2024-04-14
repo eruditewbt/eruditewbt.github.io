@@ -4,7 +4,7 @@
 
 EruditeWbt is a team of software developers offering a diverse set of services including app development, SEO and Digital Marketing, Content Development and more.
 
-![EruditeWbt](erudite.github.io/img/og-image.jpg)
+![EruditeWbt](eruditewbt.github.io/img/og-image.jpg)
 
 ## Services
 
@@ -18,10 +18,8 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
 
-
 2. Open `index.html` in your browser.
 
 ## Contact
 
-For more information, visit our website at [erudite.github.io](https://erudite.github.io).
-
+For more information, visit our website at [eruditewbt.github.io](https://eruditewbt.github.io).
