@@ -4,7 +4,7 @@
 
 EruditeWbt is a team of software developers offering a diverse set of services including app development, SEO and Digital Marketing, Content Development and more.
 
-![EruditeWbt](eruditewbt.github.io/img/og-image.jpg)
+![EruditeWbt](eruditewbt.github.io/img/ogimage.jpg)
 
 ## Services
 
