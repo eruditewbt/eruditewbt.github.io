@@ -55,7 +55,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {
@@ -94,7 +94,7 @@ section {
 .container {
   display: none;
   opacity: 0;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   background-color: var(--color-primary);
 }
 
@@ -156,7 +156,7 @@ section {
 }
 .controls .active-btn {
   background-color: var(--color-secondary);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .controls .active-btn i {
   color: var(--color-white);
@@ -244,7 +244,8 @@ section {
   animation: controlGlow 1s alternate infinite;
 }
 
-.main-btn:hover .btn-icon {
+.main-btn:hover .btn-icon,
+.btn-icon:hover {
   animation: buttonGlow 1s alternate infinite;
 }
 
@@ -297,7 +298,7 @@ section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.5s ease;
   text-align: left;
 }
 
@@ -320,7 +321,7 @@ section {
 }
 
 .cta-button:active::after {
-  animation: ripple 0.6s linear;
+  animation: ripple 0.5s linear;
 }
 
 .cta-button i {

@@ -36,7 +36,7 @@
     "touchend",
     ({ changedTouches: [{ screenX }] }) => {
       touchendX = screenX;
-      // Handle swipe based on touch direction
+      // Handle swipe based on touch directions
       handleSwipe();
     },
     false
@@ -51,13 +51,13 @@
     const activeIndex = buttons.indexOf(activeButton);
 
     // If swiped left, click the next button
-    if (touchendX + 100 < touchstartX) {
+    if (touchendX + 160 < touchstartX) {
       const nextButton = buttons[activeIndex + 1];
       nextButton?.click();
     }
 
     // If swiped right, click the previous button
-    if (touchendX > touchstartX + 100) {
+    if (touchendX > touchstartX + 160) {
       const prevButton = buttons[activeIndex - 1];
       prevButton?.click();
     }
@@ -115,12 +115,12 @@
 
       // slide in the next tab (left or right)
       if (direction === "right") {
-        if (nextActiveTab.style.animation !== "disappear 0.5s ease-in-out") {
-          nextActiveTab.style.animation = "disappear 0.5s ease-in-out";
+        if (nextActiveTab.style.animation !== "disappear 0.2s ease-in-out") {
+          nextActiveTab.style.animation = "disappear 0.2s ease-in-out";
         }
       } else {
-        if (nextActiveTab.style.animation !== "appear 0.5s ease-in-out") {
-          nextActiveTab.style.animation = "appear 0.5s ease-in-out";
+        if (nextActiveTab.style.animation !== "appear 0.2s ease-in-out") {
+          nextActiveTab.style.animation = "appear 0.2s ease-in-out";
         }
       }
 
@@ -174,7 +174,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get other elements
-  var cards = document.querySelectorAll(".card");
+  var cards = document.querySelectorAll(".pop-button");
   var span = document.getElementsByClassName("close")[0];
   var modal = document.querySelector(".modal"); // Replace ".modal" with your modal's selector
 
